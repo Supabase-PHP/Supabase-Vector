@@ -3,12 +3,14 @@
     "description": "Supabase Vector for PHP client",
     "type": "library",
     "require-dev": {
-        "phpstan/phpstan": "^2.0"
+        "phpstan/phpstan": "^2.0",
+        "pestphp/pest": "*",
+        "guzzlehttp/guzzle": "^7.9"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SupabasePhp\\SupabaseVector\\": "src/"
+            "Supabase\\Vector\\": "src/"
         }
     },
     "authors": [
@@ -18,5 +20,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
