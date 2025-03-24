@@ -23,5 +23,8 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
+    },
+    "require": {
+        "jerome/fetch-php": "^2.0"
     }
 }
