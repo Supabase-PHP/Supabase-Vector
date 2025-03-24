@@ -1,11 +1,17 @@
 {
     "name": "supabase-php/supabase-vector",
     "description": "Supabase Vector for PHP client",
+    "keywords": ["supabase-php","supabase-vector","supabase","supabase-client"],
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Supabase\\Vector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "authors": [
@@ -29,6 +35,11 @@
         "jerome/fetch-php": "^2.0"
     },
     "scripts": {
-      "phpstan": "phpstan analyse"
+      "phpstan": "phpstan analyse",
+      "pest": "pest",
+      "tests": [
+        "@tests:phpstan",
+        "@tests:pest"
+      ]
     }
 }
